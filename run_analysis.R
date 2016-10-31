@@ -21,9 +21,6 @@ train_subject <- read.table(file.path(base_path,'train','subject_train.txt'),hea
 #put training frame together using 'cbind'
 train_frame <- cbind(train_feature,train_activity,train_subject)
 
-#reading test data
-test_path <- file.path('D:/nanda/r_code/coursera/GAC_data/course_project/UCI HAR Dataset/test')
-
 test_feature <- read.table(file.path(base_path,'test','X_test.txt'),header = FALSE)
 test_labels <- read.table(file.path(base_path,'test','y_test.txt'),header = FALSE)
 test_subject <- read.table(file.path(base_path,'test','subject_test.txt'),header = FALSE)
